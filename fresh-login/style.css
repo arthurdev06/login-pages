@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@400;700&family=Rubik&display=swap");
+* {
+    font-family: "Noto Sans", sans-serif;
+}
+body {
+    margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(150deg, rgb(37, 59, 80), #000000);
+}
+
+.imageContainer {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 8rem;
+}
+
+.imageContainer > img {
+    width: 50%;
+    margin-bottom: 1em;
+}
+
+.imageContainer > h1 {
+    color: #98ccfd;
+    letter-spacing: 0.1em;
+}
+
+.loginContainer {
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginInfo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 35px;
+    background: rgb(17, 31, 44);
+    border-radius: 10px;
+    box-shadow: 4px 6px 35px #98ccfdaf;
+}
+
+.loginInfo > h1 {
+    font-weight: 800;
+    margin: 0;
+    color: #98ccfd;
+}
+
+.textField {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textField > input {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: rgb(33, 61, 87);
+    color: #f0ffff;
+    font-size: 12pt;
+    box-shadow: 1px 2px 40px #47444473;
+    box-sizing: border-box;
+}
+
+.textField > label {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.textField > input::placeholder {
+    color: #f0ffffb0;
+}
+
+.btn-login {
+    transition: all 0.5s;
+    width: 80%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(17, 31, 44);
+    background-color: #98ccfd;
+}
+
+.btn-login:hover {
+    transition: all 0.5s;
+    color: #98ccfd;
+    background-color: rgb(17, 31, 44);
+    box-shadow: 0px 4px 40px #98ccfdd0;
+    cursor: pointer;
+}
+p {
+    color: #98ccfd;
+}
+a {
+    color: #98ccfd;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    .imageContainer {
+        width: 90%;
+        margin-left: 0rem;
+    }
+    .imageContainer > h1 {
+        display: none;
+    }
+    .loginInfo {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .btn-login {
+        transition: none;
+        color: rgb(17, 31, 44);
+        background-color: #98ccfd;
+        box-shadow: none;
+    }
+    .btn-login:hover {
+        transition: none;
+        color: rgb(17, 31, 44);
+        background-color: #98ccfd;
+        box-shadow: none;
+    }
+}
